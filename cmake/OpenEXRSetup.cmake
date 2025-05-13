@@ -335,7 +335,7 @@ if(NOT TARGET Imath::Imath AND NOT Imath_FOUND)
       )
   FetchContent_GetProperties(Imath)
   if(NOT Imath_POPULATED)
-    FetchContent_MakeAvailable(Imath)
+    FetchContent_Populate(Imath)
 
     # Propagate OpenEXR's install setting to Imath
     set(IMATH_INSTALL ${OPENEXR_INSTALL})
